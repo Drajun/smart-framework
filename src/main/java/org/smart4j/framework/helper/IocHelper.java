@@ -14,6 +14,8 @@ import org.smart4j.framework.util.ReflectionUtil;
  * @QQ       1071211919
  * @Emali    longlou.d@foxmail.com
  * @Describe 依赖注入助手类
+ * 获取所有的@Service、@Controller类，然后逐个获取这些类的成员变量，
+ * 若发现该成员变量带有@Inject注解，就初始化该成员变量并赋值；
  */
 public final class IocHelper {
 	
